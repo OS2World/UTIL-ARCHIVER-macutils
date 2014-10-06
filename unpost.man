@@ -1,0 +1,40 @@
+UNPOST (1)                                             UNPOST (1)
+
+
+NAME
+     unpost - extract POST resources from Mac PostScript file
+
+SYNOPSIS
+     unpost [-b][-r]input[output]
+
+DESCRIPTION
+     unpost extracts POST resources from a Macintosh PostScript
+     file and creates a PFA (hexadecimal) or PFB (binary) file.
+     The file input should be seekable and be in MacBinary (I or
+     II) format or be a raw resource fork.  If the file output is
+     not specified output goes to the standard output.
+
+OPTIONS
+     -b
+        Output in PFB (binary) format.  The block lengths are the
+        same as the POST resource block lengths.  If you need
+        specific block length then output in PFA format and use
+        t1binary (1) instead.
+     -r
+        Indicates that the input is a raw resource fork.  Without
+        this, input is assumed to be in MacBinary (I or II) format.
+
+SEE ALSO
+     t1disasm (1), t1asm (1), t1ascii (1), t1binary (1),
+     Abobe Type 1 Font Format
+
+BUGS
+     None known.
+
+AUTHOR
+     Lee Hetherington (ilh@lcs.mit.edu)
+
+     Ported to Microsoft C/C++ Compiler and MS-DOS operating
+     system by Kai-Uwe Herbing (herbing@netmbx.netmbx.de)
+
+                          June 12, 1992

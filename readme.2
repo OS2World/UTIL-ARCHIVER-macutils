@@ -1,0 +1,60 @@
+t1utils is a collection of simple type-1 font manipulation programs.
+Together, they allow you to convert between PFA (ASCII) and PFB
+(binary) formats, disassemble PFA or PFB files into human-readable
+form, reassemble them into PFA or PFB format.  Additionally you can
+extract font resources from a Macintosh font file (ATM/Laserwriter).
+
+There are currently five programs:
+
+t1ascii     converts PFB files to PFA format.
+
+t1binary    converts PFA files to PFB format.
+
+t1disasm    disassembles a type-1 font (PFA or PFB format) into a
+                raw, human-readable text form for subsequent hand
+                editing, tweaking, hint fixing, etc...
+
+t1asm       assembles type-1 font into PFA or PFB format from raw,
+                human-readable text form.
+
+unpost      extracts POST resources from a Macintosh type-1 file
+                (ATM/Laserwriter) into PFA or PFB format for use
+                outside the Macintosh environment.  The Macintosh file
+                should be stored in MacBinary format or as a raw
+                resource fork.  Note that unpost does not have to run
+                on a Macintosh, but makes Macintosh type-1 fonts
+                available to Unix machines and PCs.
+
+These programs have been originally developed on a Sun4 (SPARC)
+using both acc and gcc by I. Lee Hetherington (ilh@lcs.mit.edu).
+
+Kai-Uwe Herbing (herbing@netmbx.netmbx.de), have ported this
+utility collection to the Microsoft C/C++ Compiler Version 7.00
+and compiled them for the MS-DOS operating system.
+
+John Paul Morrison (jmorriso@ee.ubc.ca) ported this to OS/2 2.0
+for use with the GNU/EMX compiler.
+
+The copyright on all of the tools in t1utils.zip looks like:
+
+        Copyright (c) 1992 by I. Lee Hetherington, all rights
+        reserved.
+
+        Permission is hereby granted to use, modify, and distribute
+        this program for any purpose provided this copyright notice
+        and the one below remain intact.
+
+        Ported to Microsoft C/C++ Compiler and MS-DOS operating system
+        by Kai-Uwe Herbing (herbing@netmbx.netmbx.de) on June 12, 1992.
+
+Note that these tools should not be used to illegally copy type-1 font
+programs.  Typeface design is an intricate art that should be
+rewarded.
+
+The original version numbers of the ported programs are:
+        t1ascii     1.1     t1binary    1.1
+        t1disasm    1.2     t1asm       1.2
+
+I. Lee Hetherington      Kai-Uwe Herbing
+ilh@lcs.mit.edu          herbing@netmbx.netmbx.de
+
